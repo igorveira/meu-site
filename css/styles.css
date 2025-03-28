@@ -1,0 +1,190 @@
+/* Reset de estilo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Corpo da página */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow: auto;
+    font-size: 16px;
+}
+
+
+/* Conteúdo principal */
+
+main {
+    background-color: #fff;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+/* Cabeçalho */
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: #2c3e50;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    color: #16a085;
+    font-weight: 400;
+}
+
+
+/* Seções do conteúdo */
+
+section {
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-bottom: 2px solid #ecf0f1;
+}
+
+
+/* Títulos das seções */
+
+h2 {
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+
+/* Linha sob o título */
+
+h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #e74c3c;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* Descrição do perfil */
+
+p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    line-height: 1.8;
+}
+
+
+/* Links */
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+
+/* Imagens do projeto */
+
+img {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+
+/* Rodapé */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 4rem;
+    border-radius: 8px;
+}
+
+
+/* Links no rodapé */
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+footer ul li {
+    margin-right: 15px;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #3498db;
+}
+
+
+/* Estilos para dispositivos móveis */
+
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header h2 {
+        font-size: 1.2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    footer {
+        font-size: 0.9rem;
+    }
+    footer ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    footer ul li {
+        margin-bottom: 10px;
+    }
+}
